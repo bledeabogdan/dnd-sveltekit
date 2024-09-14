@@ -1,10 +1,11 @@
-<script lang="ts">
-	import Theme from '@askia/fibre-components/theme/Theme.svelte';
-	import UiShell from '@askia/fibre-components/ui-shell/UiShell.svelte';
+<script>
+	import { Header, Content, Theme } from 'carbon-components-svelte';
+	import 'carbon-components-svelte/css/all.css';
 </script>
 
-<Theme theme="dark-grey">
-	<UiShell trackingId="shell">
-		<slot />
-	</UiShell>
-</Theme>
+<Theme theme="g80" />
+<Header company="sd" platformName="dnd-sveltekit"></Header>
+
+<Content>
+	<slot />
+</Content>
