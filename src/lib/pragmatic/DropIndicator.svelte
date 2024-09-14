@@ -24,8 +24,8 @@
 		border-style: solid;
 		border-width: 2px;
 		border-radius: 50%;
-		width: 8px;
-		height: 8px;
+		width: 4px;
+		height: 4px;
 		left: -8px;
 		bottom: -3px;
 		position: absolute;

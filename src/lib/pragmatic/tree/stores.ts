@@ -1,5 +1,5 @@
-import { Readable, writable } from 'svelte/store';
-import { type TreeAction, type TreeState, type TreeReducer } from './data';
+import { type Readable, writable } from "svelte/store";
+import { type TreeAction, type TreeState, type TreeReducer } from "./data";
 
 export function reducible(
 	state: TreeState,

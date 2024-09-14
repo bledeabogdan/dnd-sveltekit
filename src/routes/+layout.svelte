@@ -3,7 +3,7 @@
 	import 'carbon-components-svelte/css/all.css';
 </script>
 
-<Theme theme="g80" />
+<Theme theme="g10" />
 <Header company="sd" platformName="dnd-sveltekit"></Header>
 
 <Content>
