@@ -14,60 +14,6 @@ export type TreeState = {
 	data: TreeItem[];
 };
 
-export function getInitialTreeState(): TreeState {
-	return { data: getInitialData(), lastAction: null };
-}
-
-export function getInitialData(): TreeItem[] {
-	return [
-		{
-			id: '1',
-			isOpen: true,
-
-			children: [
-				{
-					id: '1.3',
-					isOpen: true,
-
-					children: [
-						{
-							id: '1.3.1',
-							children: []
-						},
-						{
-							id: '1.3.2',
-							isDraft: true,
-							children: []
-						}
-					]
-				},
-				{ id: '1.4', children: [] }
-			]
-		},
-		{
-			id: '2',
-			isOpen: true,
-			children: [
-				{
-					id: '2.3',
-					isOpen: true,
-
-					children: [
-						{
-							id: '2.3.1',
-							children: []
-						},
-						{
-							id: '2.3.2',
-							children: []
-						}
-					]
-				}
-			]
-		}
-	];
-}
-
 export type TreeAction =
 	| {
 			type: 'instruction';

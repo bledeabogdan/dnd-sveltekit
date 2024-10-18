@@ -3,24 +3,32 @@
 	import type { DependencyContext, TreeContext } from "./types";
 	import { reducible } from "./stores";
 	import {
-		getInitialTreeState,
 		tree,
 		treeStateReducer,
-		type TreeItem as TreeItemType
+		type TreeItem as TreeItemType, type TreeState
 	} from "./data";
 	import TreeItem from "./TreeItem.svelte";
 	import {
 		attachInstruction,
 		extractInstruction
 	} from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
-	import DropIndicator from "../DropIndicator.svelte";
+	import DropIndicator from "../list/DropIndicator.svelte";
 	import { getItemMode } from "./utils";
 	import invariant from "tiny-invariant";
 	import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 	import { monitorForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 
+	export let items: TreeItemType[] = [];
+
 	const registry = new Map<string, { element: HTMLElement }>();
-	const [state, dispatch] = reducible(getInitialTreeState(), treeStateReducer);
+
+	const initialState: TreeState = {
+		data: items,
+		lastAction: null
+	};
+
+	const [state, dispatch] = reducible(initialState, treeStateReducer);
+
 	const ctx = setContext<TreeContext>("tree", {
 		uniqueContextId: Symbol("tree"),
 		getPathToItem: (targetId: string) =>
@@ -35,6 +43,7 @@
 		},
 		dispatch
 	});
+
 	setContext<DependencyContext>("dependency", {
 		DropIndicator: DropIndicator,
 		attachInstruction,

@@ -1,16 +1,9 @@
 <script lang="ts">
-	import DraggableList from '../../lib/pragmatic/DraggableList.svelte';
+	import DraggableList from '../../lib/pragmatic/list/DraggableList.svelte';
 	import Tree from '../../lib/pragmatic/tree/Tree.svelte';
-	import type { Item } from '../../lib/pragmatic/utils';
 	import { Tile } from 'carbon-components-svelte';
+	import { list, treeList } from '$lib/lists';
 
-	const list: Item[] = [
-		{ id: '1', content: 'Item 1' },
-		{ id: '2', content: 'Item 2' },
-		{ id: '3', content: 'Item 3' },
-		{ id: '4', content: 'Item 4' },
-		{ id: '5', content: 'Item 5' }
-	];
 </script>
 
 <h3>List</h3>
@@ -21,5 +14,8 @@
 </DraggableList>
 <hr />
 <h3>Tree</h3>
-
-<Tree />
+<Tree items={treeList}>
+	<svelte:fragment let:item>
+		<Tile>Item {item.id} {JSON.stringify(item)}</Tile>
+	</svelte:fragment>
+</Tree>

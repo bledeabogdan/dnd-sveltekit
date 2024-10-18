@@ -4,7 +4,7 @@
 </script>
 
 <Theme theme="g10" />
-<Header company="sd" platformName="dnd-sveltekit"></Header>
+<Header company="sd" platformName="dnd-sveltekit" href="/"></Header>
 
 <Content>
 	<slot />

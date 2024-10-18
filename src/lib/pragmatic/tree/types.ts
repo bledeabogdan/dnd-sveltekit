@@ -1,5 +1,5 @@
 import type { TreeAction, TreeItem } from "./data";
-import DropIndicator from "../DropIndicator.svelte";
+import DropIndicator from "../list/DropIndicator.svelte";
 import {
 	attachInstruction,
 	extractInstruction
