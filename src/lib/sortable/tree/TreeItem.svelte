@@ -27,15 +27,12 @@
 
 <style>
     :global(.list-group) {
-        padding-left: 0.5rem;
-        border: 0px solid blue;
+				border: 1px solid #ccc;
+        padding: 0.5rem 0.5rem 0;
         margin: 0.15em 0;
     }
 
     :global(.sortable-chosen) {
         opacity: 0;
-    }
-    .item{
-        background-color: rgba(00, 100, 100, 0.1);
     }
 </style>

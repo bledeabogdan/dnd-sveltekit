@@ -65,17 +65,17 @@
 
 
 <style>
-    .nested-1 {
+    :global(.level-1) {
         margin-bottom: 8px;
         background-color: rgb(241, 241, 241);
     }
 
-    .nested-2 {
+    :global(.level-2) {
         margin-bottom: 8px;
         background-color: rgb(221, 221, 221);
     }
 
-    .nested-3 {
+    :global(.level-3) {
         margin-bottom: 8px;
         background-color: rgb(201, 201, 201);
     }

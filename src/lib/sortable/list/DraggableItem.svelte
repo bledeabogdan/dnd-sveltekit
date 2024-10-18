@@ -3,4 +3,7 @@
 
 	export let item;
 </script>
-<Tile>Item id: {item.id}</Tile>
+<div style="cursor: grab; margin: 0.1rem">
+	<Tile>Item id: {item.id}</Tile>
+</div>
+
