@@ -30,9 +30,6 @@
 				border: 1px solid #ccc;
         padding: 0.5rem 0.5rem 0;
         margin: 0.15em 0;
-    }
-
-    :global(.sortable-chosen) {
-        opacity: 0;
+				user-select: none;
     }
 </style>
