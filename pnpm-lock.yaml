@@ -14,6 +14,9 @@ importers:
       '@atlaskit/pragmatic-drag-and-drop-hitbox':
         specifier: ^1.0.3
         version: 1.0.3
+      sortablejs:
+        specifier: ^1.15.3
+        version: 1.15.3
       svelte-dnd-action:
         specifier: ^0.9.51
         version: 0.9.51(svelte@4.2.19)
@@ -36,6 +39,9 @@ importers:
       '@types/eslint':
         specifier: ^9.6.0
         version: 9.6.1
+      '@types/sortablejs':
+        specifier: ^1.15.8
+        version: 1.15.8
       carbon-components-svelte:
         specifier: ^0.85.2
         version: 0.85.2
@@ -430,6 +436,9 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/sortablejs@1.15.8':
+    resolution: {integrity: sha512-b79830lW+RZfwaztgs1aVPgbasJ8e7AXtZYHTELNXZPsERt4ymJdjV4OccDbHQAvHrCcFpbF78jkm0R6h/pZVg==}
 
   '@typescript-eslint/eslint-plugin@8.5.0':
     resolution: {integrity: sha512-lHS5hvz33iUFQKuPFGheAB84LwcJ60G8vKnEhnfcK1l8kGVLro2SFYW6K0/tj8FUhRJ0VHyg1oAfg50QGbPPHw==}
@@ -1158,6 +1167,9 @@ packages:
     resolution: {integrity: sha512-94Bdh3cC2PKrbgSOUqTiGPWVZeSiXfKOVZNJniWoqrWrRkB1CJzBU3NEbiTsPcYy1lDsANA/THzS+9WBiy5nfQ==}
     engines: {node: '>= 10'}
 
+  sortablejs@1.15.3:
+    resolution: {integrity: sha512-zdK3/kwwAK1cJgy1rwl1YtNTbRmc8qW/+vgXf75A7NHag5of4pyI6uK86ktmQETyWRH7IGaE73uZOOBcGxgqZg==}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -1642,6 +1654,8 @@ snapshots:
   '@types/estree@1.0.5': {}
 
   '@types/json-schema@7.0.15': {}
+
+  '@types/sortablejs@1.15.8': {}
 
   '@typescript-eslint/eslint-plugin@8.5.0(@typescript-eslint/parser@8.5.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)':
     dependencies:
@@ -2390,6 +2404,8 @@ snapshots:
       '@polka/url': 1.0.0-next.25
       mrmime: 2.0.0
       totalist: 3.0.1
+
+  sortablejs@1.15.3: {}
 
   source-map-js@1.2.1: {}
 
